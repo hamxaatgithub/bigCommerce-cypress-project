@@ -14,6 +14,7 @@ describe('Login testing', () => {
     it('Verifying login page',()=>{
         const lgn = new loginPage();
 
+        //custome command for login code
         lgn.login('usernname','password');
         lgn.submit();
 
