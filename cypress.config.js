@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl : 'https://www.bigcommerce.com/articles/ecommerce/',
+    baseUrl : 'https://www.bigcommerce.com/',
     watchForFileChanges: false,
     chromeWebSecurity: false,
     mochaFile: 'cypress/results/testResutls.json',
