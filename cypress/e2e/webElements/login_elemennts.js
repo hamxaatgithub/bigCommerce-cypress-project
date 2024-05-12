@@ -8,12 +8,16 @@ class loginPage {
         password : ()=> cy.get('#user_password'),
 
         //login button 
-        loginBtn : ()=> cy.get('#login_submit_button').click()
+        loginBtn : ()=> cy.xpath("//input[@type='submit']").click()
     }
+
+    visitLogin (){
+        cy.xpath("//li//a[text()='Log In']").click();
+    } 
 
     login(usernname, password){
 
-        cy.xpath("//li//a[text()='Log In']").click()
+        
 
         this.elements.user().clear()
         this.elements.user().type(usernname)

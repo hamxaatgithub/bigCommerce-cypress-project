@@ -7,6 +7,8 @@ describe("Landing Page test cases",()=>{
 
     beforeEach(()=>{
         cy.visit('/');
+
+        
     })
     context("01 - Business types tab : Enterprise",()=>{
     //01 - testcases for header section

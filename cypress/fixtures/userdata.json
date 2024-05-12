@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "email": "hello1@cypress.io",
+      "password": "password1"
+    },
+    {
+      "email": "hello2@cypress.io",
+      "password": "password2"
+    },
+    {
+      "email": "hello3@cypress.io",
+      "password": "password3"
+    },
+    {
+      "email": "hello4@cypress.io",
+      "password": "password4"
+    },
+    {
+      "email": "hello5@cypress.io",
+      "password": "password5"
+    }
+  ]
+}

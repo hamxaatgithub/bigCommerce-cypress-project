@@ -5,18 +5,30 @@ import loginPage from '../webElements/login_elemennts.js';
 
 
 describe('Login testing', () => {
+
+    let userData;
     beforeEach(() => {
         
         //visiting site , base url
         cy.visit('/')
+
+        cy.fixture('userdata.json').then((data) => {
+            userData = data.user;
+          });
     })
   
     it('Verifying login page',()=>{
         const lgn = new loginPage();
+        const user1=userData[0]
+        lgn.visitLogin();
+        userData.forEach((element, index )=> {
+            lgn.login(element.email,element.password);
+            lgn.submit();
 
+        });
         //custome command for login code
-        lgn.login('usernname','password');
-        lgn.submit();
+        //lgn.login(user1.email,user1.name);
+        //lgn.submit();
 
     })
 
